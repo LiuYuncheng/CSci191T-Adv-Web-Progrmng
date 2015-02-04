@@ -1,0 +1,53 @@
+package main
+
+import "fmt"
+
+type flower struct {
+	name string
+	FlowerLanguage string
+}
+
+func Laugh(){
+	var a, b, c = 1, 2, 3
+	fmt.Println(a, b, c)
+	
+	var Laugh string = "HA"
+	fmt.Print(Laugh)
+	fmt.Println(Laugh)
+
+	var Laugh2 = "HAHAHA"
+	fmt.Println(Laugh2)
+
+	message1 := "Hello world!"
+	d, e, f := 1, false, 3
+	fmt.Println(message1, d, e, f)
+
+	}
+	
+func PointerMessage(){
+	var message2 = "Hello world!"
+	var greeting *string = &message2
+	fmt.Println(message2, greeting)
+	}
+
+func main () {
+
+	Laugh()
+    PointerMessage()
+
+	var BellsOfIreland = flower {}
+	BellsOfIreland.name = "Bells Of Ireland"
+	BellsOfIreland.FlowerLanguage = ":Good Luck" 
+	fmt.Println (BellsOfIreland.name, BellsOfIreland.FlowerLanguage)
+
+	var Lilac  = flower {"Lilac", ":Beauty"}
+	fmt.Println (Lilac.name, Lilac.FlowerLanguage)
+
+	var Wisteria = flower {name:"Wisteria", FlowerLanguage:":Welcome"}
+	fmt.Println (Wisteria.name, Wisteria.FlowerLanguage)
+
+    type Greet string
+	var Hello Greet = "Hello Go World!"
+	fmt.Println (Hello)
+}
+
