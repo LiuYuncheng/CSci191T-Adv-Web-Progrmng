@@ -5,5 +5,5 @@ import(
 )
 
 func main(){
-fmt.Printf("Hello!")
+fmt.Printf("hello world")
 }
