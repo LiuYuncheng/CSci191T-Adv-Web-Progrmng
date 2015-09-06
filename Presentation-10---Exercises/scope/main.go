@@ -1,16 +1,11 @@
 package main
-import (
-	"github.com/jennifergarner/CS191T/10_exercises/scope/names"
+import(
+	"github.com/LiuYuncheng/CSci191T-Adv-Web-Progrmng/Presentation-10---Exercises/scope/names"
 	"fmt"
 )
 
-func main () {
+func main(){
 	//fmt.Println(names.MyName)
 	fmt.Println(names.yourName)
+	
 }
-
-
-
-package main
-import(
-	"github.com/LiuYuncheng/CSci191T-Adv-Web-Progrmng-"
