@@ -1,18 +1,17 @@
 package main
 import "fmt"
 
-func main () {
-	//this works
-	mySentence := "1 2"
-	var one, two int
-	fmt.Sscan(mySentence, &one, &two)
-	fmt.Println(one, two)
-
-	//this does not. I thought interface{} was "any type"
-	//so why is it telling me "can't accept []string as []interface{} ?
-	mySentence = "this is a second attempt"
+func main(){
+	mySentence := "2 4"
+	var two, four int
+	fmt.Sscan(mySentence, &two, &four)
+	fmt.Println(two, four)
+	//{} can be any type but [] string can't accept as []interface{}
+	mySentence = "a second attempt"
 	var myWords []string
 	num, err := fmt.Sscan(mySentence, myWords...)
 	fmt.Println(num, err)
 	fmt.Println(myWords)
 }
+	
+	
