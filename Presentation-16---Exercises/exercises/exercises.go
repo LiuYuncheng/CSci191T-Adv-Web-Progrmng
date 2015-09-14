@@ -67,7 +67,7 @@ func main(){
 fmt.Println(half(4))
 fmt.Println(half(5))
 
-fmt.Println(greatest(5, 6, 99, 0))
+fmt.Println(greatest(15, 22, 44, 4))
 
 //bool
 
