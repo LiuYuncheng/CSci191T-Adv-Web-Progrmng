@@ -51,7 +51,7 @@ return sum * 2
 }
 
 func thisiscallback (name string, myFunc func(...string)){
-myFunc("My name is " + name)
+myFunc("Her name is " + name)
 }
 
 func fib (n int) int {
@@ -74,7 +74,7 @@ fmt.Println(greatest(15, 22, 44, 4))
 fmt.Println((true && false) || (false && true) || !(false && false))
 
 //two params
-fmt.Prinln(nameAge("Nuomi", 21))
+fmt.Prinln(nameAge("Nuomi", variadic ))
 
 //two returns
 dogYears, old := dogAge("Nuomi", 21)
@@ -93,7 +93,7 @@ fmt.Println(mySentence)
 fmt.Println(dogAge2(21))
 
 //variadic parameters & variadic arguments
-print("hello world!", "this is Nuomi", "how are you doing today?")
+print("hello world!", "this is Nuomi", "how are you?")
 
 //func expression
 myPrint := print
@@ -113,7 +113,7 @@ fmt.Println(increment())
 fmt.Println(increment())
 
 //returning a func
-myFunc := funcception(1,2,3)
+myFunc := funcception(2,1,5)
 fmt.Println(myFunc())
 
 //callback
@@ -123,8 +123,8 @@ thisiscallback("Nuomi", print)
 fmt.Println(fib(15))
 
 //defer
-defer fmt.Println("this will happen in the future!")
-fmt.Println("this will happen right now!")
+defer fmt.Println("will")
+fmt.Println("now")
 }
 
 
