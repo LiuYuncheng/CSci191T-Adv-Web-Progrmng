@@ -534,109 +534,70 @@ finalBytes := h.Sum(nil)
 finalString := hex.EncodeToString(finalBytes)
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-type Person struct {
+type Person struct{
 	Name string
 	Email string
 }
-func gravatar () {
+func gravatar(){
 	var name, email string
-	
 	fmt.Println("Please enter your first name")
 	fmt.Scanln(&name)
-
-	fmt.Println("Please enter your email")
+	
+	fmt.Println("Enter your first name: ")
+	fmt.Scanln(&name)
+	
+	fmt.Println("Enter your email: ")
 	fmt.Scanln(&email)
 	
 	email = strings.ToLower(email)
 	
-	h := md5.New() 
-	io.WriteString(h, email) 
-	finalBytes := h.Sum(nil) 
-	finalString := hex.EncodeToString(finalBytes) 
+	h := md5.New()
+	io.WriteString(h, email)
+	finalBytes := h.Sum(nil)
+	finalString := hex.EncodeToString(finalBytes)
 	
 	//generate page
-	t, _ := template.New("tpl3").Parse(`
+	t, _ := template.New("tp13").Parse(`
 	{{define "Gravatar"}}
-		<h1>{{.Name}}</h1>
-		<img src="http://www.gravatar.com/avatar/{{.Email}}"/>
+	<h1>{{.Name}}</h1>
+	<ima src="http://www.gravatar.com/avatar/{{.Email}}"/>
 	{{end}}
 	`)
 	out, _ := os.Create("myGravatar.html")
 	_ = t.ExecuteTemplate(out, "Gravatar", Person{name, finalString})
 }
-
-
-func main () {
+	
+	
+func main(){
 	fmt.Println("Word Count")
 	fmt.Println(WordCount("test test"))
 	fmt.Println()
 	
 	fmt.Println("Centered Average")
-	fmt.Println(CenteredAverage([]float64{1, 2, 3, 4, 100}))
+	fmt.Println(CenteredAverage([]float64{1,3,5,8,99}))
 	fmt.Println()
 	
 	fmt.Println("Swap")
-	x := 1
-	y := 2
+	x := 4
+	y := 3
 	swap(&x, &y)
-	fmt.Println(x, y)
+	fmt.Println(x,y)
 	fmt.Println()
-
+	
 	fmt.Println("Count Clumps")
-	fmt.Println(countClumps([]int{1, 2, 2, 3, 4, 4}))
-	fmt.Println(countClumps([]int{1, 1, 2, 1, 1}))
-	fmt.Println(countClumps([]int{1, 1, 1, 1, 1}))
+	fmt.Println(countClumps([]int{1,2,2,3,4,4}))
+	fmt.Println(countClumps([]int{1,1,2,1,1}))
+	fmt.Println(countClumps([]int{1,1,1,1,1}))
 	fmt.Println()
-
+	
 	fmt.Println("Cat")
 	cat("test.txt")
 	fmt.Println()
-
+	
 	fmt.Println("Copy")
 	copy("test.txt")
 	cat("test-copy.txt")
-	fmt.Println()	
+	fmt.Println()
 	
 	fmt.Println("cp")
 	cp("test.txt", "newFile.txt")
@@ -658,9 +619,7 @@ func main () {
 	fmt.Println("Whale Count in Moby Dick")
 	fmt.Println(countWhale())
 	fmt.Println()
-	
-	
-	fmt.Println("Longest Word in Moby Dick")
+	fmt.Println("Longest Word in Moby Dick: ")
 	fmt.Println(longestWord())
 	fmt.Println()
 	
