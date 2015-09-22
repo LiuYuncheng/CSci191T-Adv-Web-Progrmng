@@ -1,4 +1,3 @@
-
 id	name	abbreviation	country	type	sort	status	occupied	notes	fips_state	assoc_press	standard_federal_region	census_region	census_region_name	census_division	census_division_name	circuit_court
 1	Alabama	AL	USA	state	10	current	occupied		1	Ala.	IV	3	South	6	East South Central	11
 2	Alaska	AK	USA	state	10	current	occupied		2	Alaska	X	4	West	9	Pacific	9
