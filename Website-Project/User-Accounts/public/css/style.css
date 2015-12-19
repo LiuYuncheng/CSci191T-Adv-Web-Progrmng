@@ -1,0 +1,78 @@
+a.blog-link, a.author-link {
+  color: #555;
+  }
+
+a.blog-link:hover, a.author-link:hover  {
+  text-decoration: none;
+  color: black;
+  }
+
+ 
+.collabowrite {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-family: 'Handlee', cursive;
+  font-size: 24px;
+  padding: 10px;
+  display: inline;
+  }
+
+.blog-nav {
+  display: inline;
+  }
+
+.nav-container {
+  display: inline-block;
+  }
+
+a.login, a.signup {
+  float: right;
+  margin-left: 10px;
+  margin-top: 5px;
+  }
+
+ 
+table.user-profile td ul {
+  list-style-type: none;
+  padding-left: 0;
+  }
+
+ 
+img.profile-pic-large {
+  width: 250px;
+  }
+
+img.profile-pic-small {
+  width: 150px;
+  }
+
+.no-background {
+  background: none;
+  }
+
+div.user-picture-thumbnail {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  }
+
+div.margin-bottom {
+  margin-bottom: 20px;
+  }
+
+
+ 
+form.scene-form textarea {
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  }
+
+form.scene-form select {
+  min-width: 90px;
+  border-radius: 4px;
+  padding: 5px;
+  }
