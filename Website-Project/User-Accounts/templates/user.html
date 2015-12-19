@@ -1,0 +1,81 @@
+{{ define "user-profile" }}
+<table class="user-profile table">
+	<tr>
+		<td><strong>Username</strong></td>
+		<td>{{ .Username }}</td>
+  	</tr>
+	<tr>
+		<td><strong>Name</strong></td>
+		<td>{{ .Name }}</td>
+	  </tr>
+	<tr>
+		<td><strong>Email</strong></td>
+		<td>{{ .Email }}</td>
+	  </tr>
+	<tr>
+		<td><strong>About</strong></td>
+		<td>{{ .About }}</td>
+	  </tr>
+	<tr>
+		<td><strong>Stories</strong></td>
+		<td>
+			<ul>
+				<li><a href="/view" class="blog-link">Story 1</a></li>
+				<li><a href="/view" class="blog-link">Story 2</a></li>
+				<li><a href="/view" class="blog-link">Story 3</a></li>
+		  	</ul>
+	  	</td>
+  	</tr>
+	<tr>
+		<td><strong>Contributing to</strong></td>
+		<td>
+			<ul>
+				<li><a href="/view" class="blog-link">Story 1</a></li>
+				<li><a href="/view" class="blog-link">Story 2</a></li>
+				<li><a href="/view" class="blog-link">Story 3</a></li>
+		  	</ul>
+		  </td>
+  	</tr>
+	<tr>
+		<td><strong>Member Since</strong></td>
+		<td>{{ .JoinDate }}</td>
+  	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+  	</tr>
+  </table>
+{{ end }}
+
+
+{{ define "user-picture" }}
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+    <div class="sidebar-module sidebar-module-inset no-background">
+		<h3>Profile Picture</h3>
+		<img src="{{ . }}" class="profile-pic-large" />	
+  	</div>
+  </div>
+{{ end }}
+
+
+{{ define "user-thumbnail" }}
+<div class="user-picture-thumbnail">
+	<img src="{{ . }}" class="profile-pic-small" />	
+  </div>
+{{ end }}
+
+
+{{ define "about" }}
+<a class="author-link" href="/user/{{ .Username }}">
+	<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+		<div class="sidebar-module sidebar-module-inset">
+			<div class="user-picture-thumbnail margin-bottom">
+				<img src="{{ .Image }}" class="profile-pic-small" />	
+			  </div>
+			<h4 class="about">About the Owner</h4>
+			<h5>{{ .Username }}</h5>
+			<p>{{ .About }}</p>
+	  	</div>
+  	</div>
+  </a>
+{{ end }}
