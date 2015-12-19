@@ -1,0 +1,30 @@
+{{ template "header" . }}
+   
+<div class="container">
+
+  <div class="blog-header">
+    <h1 class="blog-title">Write</h1>
+    </div>
+
+  <div class="row">
+    <form action="/api/scene" method="post" class="scene-form">
+      
+      <select name="story">
+        <option value="story1">Story 1</option>
+        <option value="story2">Story 2</option>
+        <option value="story3">Story 3</option>
+       </select>
+      <textarea class="form-control" name="scene"></textarea>
+      <input type="hidden" name="story" value="" />
+      <button class="btn btn-primary" type="submit">Submit</button>
+      </form>	
+    </div>
+
+  </div>
+
+{{ template "footer" }}
+
+
+<script>
+  document.getElementById("write").setAttribute("class", "active blog-nav-item");
+  </script>
