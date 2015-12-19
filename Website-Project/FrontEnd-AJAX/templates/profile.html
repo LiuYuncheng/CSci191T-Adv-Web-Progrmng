@@ -1,0 +1,28 @@
+{{ template "header" . }}
+   
+<div class="container">
+
+  <div class="blog-header">
+    <h1 class="blog-title">Profile</h1>
+   </div>
+
+  <div class="row">
+
+    <a class="btn btn-primary" href="/editProfile">Edit</a> 
+    
+    <div class="col-sm-8 blog-main">
+        {{ template "user-profile" .ViewingUser }}
+     </div>
+
+    {{ template "user-picture" .ViewingUser.Image }}
+
+   </div>
+
+  </div>
+
+{{ template "footer" }}
+
+
+<script>
+  document.getElementById("profile").setAttribute("class", "active blog-nav-item");
+  </script>
