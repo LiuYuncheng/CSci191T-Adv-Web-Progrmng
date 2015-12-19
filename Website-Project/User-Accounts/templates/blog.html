@@ -1,0 +1,37 @@
+{{ define "scene" }}
+<div class="blog-post">
+	<h2 class="blog-post-title">Scene 1</h2>
+	<p class="blog-post-meta">January 1, 2014 by <a href="/profile">Mark</a></p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a pellentesque orci. Pellentesque euismod scelerisque purus. Vestibulum euismod tortor id molestie pulvinar. Sed quis vehicula velit, et blandit dolor. Duis sed mi tempus mauris volutpat vestibulum id quis libero. Nullam vel est at libero facilisis fermentum vel id nulla. Nunc ultrices ultricies placerat. Nunc vel velit at ex elementum blandit. Nam vitae placerat purus. Ut enim justo, aliquam et pharetra in, maximus in nulla. Etiam nec nibh tincidunt, iaculis ex nec, volutpat ipsum. Suspendisse blandit massa et felis ultricies tincidunt. Vestibulum eu convallis purus.</p>
+	<p>Pellentesque eget mi massa. Pellentesque lectus leo, dignissim non arcu ac, facilisis mattis mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et semper sem. Morbi vestibulum purus et mi maximus iaculis. Mauris placerat, urna sit amet eleifend maximus, massa magna molestie justo, et consectetur ex justo vel leo. Duis sed ligula quis magna egestas posuere. Pellentesque vitae enim nisi. Aliquam vel odio nec arcu interdum euismod. Pellentesque maximus est nisi, in sagittis eros euismod maximus.</p>
+	<p>Aliquam iaculis tincidunt nisi, et congue mauris blandit sed. In ac porttitor sem. Donec congue et quam ut egestas. In hac habitasse platea dictumst. Curabitur vitae egestas sem. Vivamus massa quam, mattis commodo tincidunt quis, finibus facilisis felis. Aliquam quis aliquet ipsum. Integer accumsan est a mattis eleifend. Aenean ligula massa, suscipit ut tincidunt nec, convallis eget elit. Etiam magna tellus, vulputate ut pulvinar a, accumsan id dui. Nam convallis eget sapien quis eleifend. Quisque leo dolor, faucibus in rutrum sit amet, bibendum eu nunc. Vestibulum auctor posuere iaculis.</p>
+	<p>Etiam vulputate lacus non gravida pellentesque. Aenean laoreet nibh sit amet ligula blandit lacinia. Mauris consequat est et faucibus maximus. Quisque ut venenatis metus, pretium dignissim sapien. Etiam nisl purus, elementum eu semper vitae, accumsan nec sem. Nullam sit amet vehicula massa. Praesent massa erat, eleifend a egestas at, malesuada vitae mi. Maecenas sit amet nulla sed dolor euismod egestas. Aliquam tellus erat, gravida quis facilisis eu, commodo ac libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer rutrum ligula quis massa tempus facilisis. Nullam consequat, massa eu fringilla vehicula, lacus dui scelerisque augue, tristique ornare enim odio dapibus nisi. Aliquam dolor urna, dignissim nec velit nec, fermentum facilisis eros. Suspendisse hendrerit fringilla justo vitae ullamcorper.</p>
+  </div>
+{{ end }}
+
+
+{{ define "blog-footer" }}
+<footer class="blog-footer">
+	<a href="#">Back to top</a>
+  </footer>
+{{ end }}
+
+
+{{ define "blog-preview" }}
+<a class="list-group-item" href="/view">
+	{{ template "user-thumbnail"}}
+	<h3>Blog Title</h3>
+	<h4>Blog Owner</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a pellentesque orci. Pellentesque euismod scelerisque purus. Vestibulum euismod tortor id molestie pulvinar. Sed quis vehicula velit, et blandit dolor. Duis sed mi tempus mauris volutpat vestibulum id quis libero. Nullam vel est at libero facilisis fermentum vel id nulla.</p>
+  </a>
+{{ end }}
+
+{{ define "blog-links" }}
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	<div class="sidebar-module sidebar-module-inset">
+		<a class="join-request" href="/api/join">
+			<button class="btn btn-primary">Join</button>
+	  	</a>
+	  </div>
+  </div>
+{{ end }}
