@@ -1,0 +1,32 @@
+{{ template "header" . }}
+   
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Story Title</h1>
+        <p class="lead blog-description">Description of story</p>
+        </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+          {{ template "scene" }}
+          {{ template "scene" }}
+          {{ template "scene" }}
+          </div>
+
+        {{ template "about" }}
+        {{ template "blog-links" }}
+
+       </div>
+
+     </div>
+
+   {{ template "blog-footer" }}
+   
+   {{ template "footer" }}
+   
+
+<script>
+  document.getElementById("view").setAttribute("class", "active blog-nav-item");
+  </script>
